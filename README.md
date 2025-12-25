@@ -77,28 +77,34 @@ Perfect for those starting their Python journey. Focus on fundamentals like vari
 | 01 | [Hello World & Input/Output](./Project%20-%2001) | Print, Input, Variables | ✅ |
 | 02 | [Calculator](./Project%20-%2002) | Arithmetic Operations, Functions | ✅ |
 | 03 | [Number Guessing Game](./Project%20-%2003) | Loops, Conditionals, Random | ✅ |
-| 04 | [Temperature Converter](./Project%20-%2004) | Functions, Mathematical Operations | ✅ |
-| 05 | [Simple To-Do List](./Project%20-%2005) | Lists, File I/O, CRUD Operations | ✅ |
-| 06 | [Password Generator](./Project%20-%2006) | Strings, Random Module, Validation | ✅ |
-| 07 | [Rock Paper Scissors](./Project%20-%2007) | Game Logic, User Input, Conditionals | ✅ |
-| 08 | [Countdown Timer](./Project%20-%2008) | Time Module, Loops, User Interface | ✅ |
-| 09 | [Unit Converter](./Project%20-%2009) | Functions, Dictionary, Input Handling | ✅ |
-| 10 | [Simple Quiz Game](./Project%20-%2010) | Lists, Dictionaries, Scoring System | ✅ |
-| 11 | [Text Analyzer](./Project%20-%2011) | String Methods, File Reading, Statistics | ✅ |
-| 12 | BMI Calculator | Input/Output, Functions, Health Calculations | 🚧 |
-| 13 | Dice Rolling Simulator | Random Module, ASCII Art, Simulation | 🚧 |
-| 14 | Palindrome Checker | String Manipulation, Validation | 🚧 |
-| 15 | Leap Year Checker | Date Operations, Logic | 🚧 |
-| 16 | Factorial Calculator | Recursion, Mathematical Operations | 🚧 |
-| 17 | Prime Number Checker | Algorithms, Loops, Optimization | 🚧 |
-| 18 | Currency Converter | API Integration, JSON, Calculations | 🚧 |
-| 19 | Digital Clock | Tkinter, Time Module, GUI Basics | 🚧 |
-| 20 | Mad Libs Generator | String Formatting, User Input, Creativity | 🚧 |
-| 21 | Word Counter | File Operations, Text Processing | 🚧 |
-| 22 | Simple Stopwatch | Time Module, GUI, Control Flow | 🚧 |
-| 23 | Age Calculator | DateTime, Date Arithmetic | 🚧 |
-| 24 | Tip Calculator | Calculations, User Input, Formatting | 🚧 |
-| 25 | Simple Contact Book | File I/O, CRUD, Data Management | 🚧 |
+| 04 | [Rock,Paper,Scissors](./Project%20-%2004) | Game Logic, User Input, Conditionals | ✅ |
+| 05 | [Odd-Even Chacker](./Project%20-%2005) | Lists, Conditionals, Functions | ✅ |
+| 06 | [Leap Year Checker](./Project%20-%2006) | Date Operations, Logic | ✅ |
+| 07 | [Palindrome Checker](./Project%20-%2007) | String Manipulation, Validation | ✅ |
+| 08 | [Password Generator](./Project%20-%2008) | Strings, Random Module, Validation | ✅ |
+| 09 | [Dice Rolling Simulator](./Project%20-%2009) | Random Module, ASCII Art, Simulation | ✅ |
+| 10 | [Unit Converter](./Project%20-%2010) | Functions, Dictionary, Input Handling | ✅ |
+| 11 | [BMI Calculator](./Project%20-%2011) | Input/Output, Functions, Health Calculations | ✅ |
+| 12 | [Prime Number Checker](./Project%20-%2012) | Algorithms, Loops, Optimization | ✅ |
+| 13 | [Fibonacci Sequence Generator](./Project%20-%2013) | Algorithms, Loops, Optimization | ✅ |
+| 14 | [Countdown Timer]() | Time Module, Loops, User Interface | 🚧 |
+| 15 | [Digital Clock]() | Tkinter, Time Module, GUI Basics | 🚧 |
+| 16 | [Factorial Calculator]() | Recursion, Mathematical Operations | 🚧 |
+| 17 | [To-Do List (File Based)]() | Lists, GUI , Storage | 🚧 |
+| 18 | [Mad Libs Generator]() | String Formatting, User Input, Creativity | 🚧 |
+| 19 | [Hangman Game]() | ASCII , List , User Input, Creativity | 🚧 |
+| 20 | [Word Counter]() | File Operations, Text Processing | 🚧 |
+| 21 | [QR Code Generator]() | Libraries , Image Path , Functions | 🚧 |
+| 22 | [Currency Converter]() | API Integration, JSON, Calculations | 🚧 |
+| 23 | [Email Slicer]() | Pattern Analysis, Email Detection, Function | 🚧 |
+| 24 | [Simple & Compound Interest Calculator]() | Calculations, User Input, Formatting | 🚧 |
+| 25 | [Typing Speed Test]() | Libraries , Functions , Calculation | 🚧 |
+| 26 | [Simple Quiz Game]() | Lists, Dictionaries, Scoring System | 🚧 |
+| 27 | [Text Analyzer]() | String Methods, File Reading, Statistics | 🚧 |
+| 28 | [Simple Stopwatch]() | Time Module, GUI, Control Flow | 🚧 |
+| 29 | [Age Calculator]() | DateTime, Date Arithmetic | 🚧 |
+| 30 | [Simple Contact Book]() | File I/O, CRUD, Data Management | 🚧 |
+| 31 | [Flashcards App (CLI)]() | File I/O, JSON, Data Management | 🚧 |
 
 ### **Intermediate Projects (26-50)**
 
