@@ -87,8 +87,8 @@ Perfect for those starting their Python journey. Focus on fundamentals like vari
 | 11 | [BMI Calculator](./Project%20-%2011) | Input/Output, Functions, Health Calculations | ✅ |
 | 12 | [Prime Number Checker](./Project%20-%2012) | Algorithms, Loops, Optimization | ✅ |
 | 13 | [Fibonacci Sequence Generator](./Project%20-%2013) | Algorithms, Loops, Optimization | ✅ |
-| 14 | [Countdown Timer]() | Time Module, Loops, User Interface | 🚧 |
-| 15 | [Digital Clock]() | Tkinter, Time Module, GUI Basics | 🚧 |
+| 14 | [Countdown Timer](./Project%20-%2014) | Time Module, Loops, User Interface | ✅ |
+| 15 | [Digital Clock](./Project%20-%2015) | Tkinter, Time Module, GUI Basics | ✅ |
 | 16 | [Factorial Calculator]() | Recursion, Mathematical Operations | 🚧 |
 | 17 | [To-Do List (File Based)]() | Lists, GUI , Storage | 🚧 |
 | 18 | [Mad Libs Generator]() | String Formatting, User Input, Creativity | 🚧 |
