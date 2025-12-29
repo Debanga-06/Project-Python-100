@@ -68,7 +68,7 @@ Project - XX/
 
 ## 🗂️ Project Catalog
 
-### **Beginner Projects (1-25)**
+### **Beginner Projects (1-31)**
 
 Perfect for those starting their Python journey. Focus on fundamentals like variables, loops, conditionals, and basic data structures.
 
@@ -106,101 +106,101 @@ Perfect for those starting their Python journey. Focus on fundamentals like vari
 | 30 | [Simple Contact Book]() | File I/O, CRUD, Data Management | 🚧 |
 | 31 | [Flashcards App (CLI)]() | File I/O, JSON, Data Management | 🚧 |
 
-### **Intermediate Projects (26-50)**
+### **Intermediate Projects (1-25)**
 
 Build on fundamentals with API integration, web scraping, GUI development, and data manipulation.
 
 | # | Project Name | Key Concepts | Status |
 |---|--------------|--------------|--------|
-| 26 | Weather App | API Integration, JSON, GUI | 🚧 |
-| 27 | URL Shortener | Database, Hashing, Web Development | 🚧 |
-| 28 | QR Code Generator | Libraries, Image Processing | 🚧 |
-| 29 | Web Scraper | BeautifulSoup, Requests, HTML Parsing | 🚧 |
-| 30 | Email Sender | SMTP, Email Libraries, Automation | 🚧 |
-| 31 | Expense Tracker | Database, Data Visualization, Analysis | 🚧 |
-| 32 | Markdown to HTML Converter | Regex, File Operations, Parsing | 🚧 |
-| 33 | Flashcard App | GUI, Data Persistence, Study Tool | 🚧 |
-| 34 | Password Manager | Encryption, Security, Database | 🚧 |
-| 35 | Pomodoro Timer | GUI, Time Management, Notifications | 🚧 |
-| 36 | RSS Feed Reader | XML Parsing, Web Feeds, Display | 🚧 |
-| 37 | Image Resizer | PIL/Pillow, Batch Processing | 🚧 |
-| 38 | YouTube Downloader | pytube, File Management | 🚧 |
-| 39 | Snake Game | Pygame, Game Development | 🚧 |
-| 40 | Chat Application | Sockets, Networking, Threading | 🚧 |
-| 41 | Typing Speed Test | GUI, Timing, Statistics | 🚧 |
-| 42 | Sudoku Solver | Backtracking Algorithm, Recursion | 🚧 |
-| 43 | Alarm Clock | Time Module, Audio, Threading | 🚧 |
-| 44 | PDF Merger | PyPDF2, File Operations | 🚧 |
-| 45 | Screen Recorder | Screen Capture, Video Processing | 🚧 |
-| 46 | Music Player | Pygame, GUI, Playlist Management | 🚧 |
-| 47 | Hangman Game | Game Logic, File I/O, GUI | 🚧 |
-| 48 | Tic-Tac-Toe AI | Game Theory, Minimax Algorithm | 🚧 |
-| 49 | Language Translator | API, GUI, Multiple Languages | 🚧 |
-| 50 | Budget Planner | Data Analysis, Visualization, Reports | 🚧 |
+| 1 | Weather App | API Integration, JSON, GUI | 🚧 |
+| 2 | URL Shortener | Database, Hashing, Web Development | 🚧 |
+| 3 | QR Code Generator | Libraries, Image Processing | 🚧 |
+| 4 | Web Scraper | BeautifulSoup, Requests, HTML Parsing | 🚧 |
+| 5 | Email Sender | SMTP, Email Libraries, Automation | 🚧 |
+| 6 | Expense Tracker | Database, Data Visualization, Analysis | 🚧 |
+| 7 | Markdown to HTML Converter | Regex, File Operations, Parsing | 🚧 |
+| 8 | Flashcard App | GUI, Data Persistence, Study Tool | 🚧 |
+| 9 | Password Manager | Encryption, Security, Database | 🚧 |
+| 10 | Pomodoro Timer | GUI, Time Management, Notifications | 🚧 |
+| 11 | RSS Feed Reader | XML Parsing, Web Feeds, Display | 🚧 |
+| 12 | Image Resizer | PIL/Pillow, Batch Processing | 🚧 |
+| 13 | YouTube Downloader | pytube, File Management | 🚧 |
+| 14 | Snake Game | Pygame, Game Development | 🚧 |
+| 15 | Chat Application | Sockets, Networking, Threading | 🚧 |
+| 16 | Typing Speed Test | GUI, Timing, Statistics | 🚧 |
+| 17 | Sudoku Solver | Backtracking Algorithm, Recursion | 🚧 |
+| 18 | Alarm Clock | Time Module, Audio, Threading | 🚧 |
+| 19 | PDF Merger | PyPDF2, File Operations | 🚧 |
+| 20 | Screen Recorder | Screen Capture, Video Processing | 🚧 |
+| 21 | Music Player | Pygame, GUI, Playlist Management | 🚧 |
+| 22 | Hangman Game | Game Logic, File I/O, GUI | 🚧 |
+| 23 | Tic-Tac-Toe AI | Game Theory, Minimax Algorithm | 🚧 |
+| 24 | Language Translator | API, GUI, Multiple Languages | 🚧 |
+| 25 | Budget Planner | Data Analysis, Visualization, Reports | 🚧 |
 
-### **Advanced Projects (51-75)**
+### **Advanced Projects (1-25)**
 
 Dive into complex applications with machine learning, data science, automation, and full-stack development.
 
 | # | Project Name | Key Concepts | Status |
 |---|--------------|--------------|--------|
-| 51 | Stock Price Predictor | Machine Learning, Data Analysis, APIs | 🚧 |
-| 52 | Facial Recognition System | OpenCV, Deep Learning, Computer Vision | 🚧 |
-| 53 | Blog Website | Flask/Django, Database, Authentication | 🚧 |
-| 54 | Task Automation Bot | Selenium, Web Automation | 🚧 |
-| 55 | Movie Recommendation System | ML Algorithms, Data Processing | 🚧 |
-| 56 | Sentiment Analysis Tool | NLP, Text Classification, ML | 🚧 |
-| 57 | RESTful API | Flask/FastAPI, Database, CRUD | 🚧 |
-| 58 | File Encryption Tool | Cryptography, Security, File Operations | 🚧 |
-| 59 | Twitter Bot | API Integration, Automation, Scheduling | 🚧 |
-| 60 | Image Recognition Classifier | TensorFlow/PyTorch, CNN, Training | 🚧 |
-| 61 | Voice Assistant | Speech Recognition, Text-to-Speech | 🚧 |
-| 62 | Network Scanner | Socket Programming, Security | 🚧 |
-| 63 | Blockchain Implementation | Data Structures, Cryptography, Consensus | 🚧 |
-| 64 | E-commerce Platform | Full-Stack, Payment Integration, Database | 🚧 |
-| 65 | Real-Time Chat App | WebSockets, Database, Authentication | 🚧 |
-| 66 | Data Dashboard | Plotly/Dash, Real-Time Updates | 🚧 |
-| 67 | Code Plagiarism Detector | NLP, Similarity Algorithms | 🚧 |
-| 68 | Stock Trading Bot | APIs, Algorithmic Trading, Analysis | 🚧 |
-| 69 | News Aggregator | Web Scraping, NLP, Categorization | 🚧 |
-| 70 | Video Streaming Platform | Flask, Video Processing, Database | 🚧 |
-| 71 | Automated Testing Framework | Unit Testing, Integration Testing | 🚧 |
-| 72 | Fitness Tracker | Data Visualization, Statistics, GUI | 🚧 |
-| 73 | Social Media Analytics | API, Data Mining, Visualization | 🚧 |
-| 74 | Content Management System | Django, Database, User Management | 🚧 |
-| 75 | OCR Text Extractor | Tesseract, Image Processing, NLP | 🚧 |
+| 1 | Stock Price Predictor | Machine Learning, Data Analysis, APIs | 🚧 |
+| 2 | Facial Recognition System | OpenCV, Deep Learning, Computer Vision | 🚧 |
+| 3 | Blog Website | Flask/Django, Database, Authentication | 🚧 |
+| 4 | Task Automation Bot | Selenium, Web Automation | 🚧 |
+| 5 | Movie Recommendation System | ML Algorithms, Data Processing | 🚧 |
+| 6 | Sentiment Analysis Tool | NLP, Text Classification, ML | 🚧 |
+| 7 | RESTful API | Flask/FastAPI, Database, CRUD | 🚧 |
+| 8 | File Encryption Tool | Cryptography, Security, File Operations | 🚧 |
+| 9 | Twitter Bot | API Integration, Automation, Scheduling | 🚧 |
+| 10 | Image Recognition Classifier | TensorFlow/PyTorch, CNN, Training | 🚧 |
+| 11 | Voice Assistant | Speech Recognition, Text-to-Speech | 🚧 |
+| 12 | Network Scanner | Socket Programming, Security | 🚧 |
+| 13 | Blockchain Implementation | Data Structures, Cryptography, Consensus | 🚧 |
+| 14 | E-commerce Platform | Full-Stack, Payment Integration, Database | 🚧 |
+| 15 | Real-Time Chat App | WebSockets, Database, Authentication | 🚧 |
+| 16 | Data Dashboard | Plotly/Dash, Real-Time Updates | 🚧 |
+| 17 | Code Plagiarism Detector | NLP, Similarity Algorithms | 🚧 |
+| 18 | Stock Trading Bot | APIs, Algorithmic Trading, Analysis | 🚧 |
+| 19 | News Aggregator | Web Scraping, NLP, Categorization | 🚧 |
+| 20 | Video Streaming Platform | Flask, Video Processing, Database | 🚧 |
+| 21 | Automated Testing Framework | Unit Testing, Integration Testing | 🚧 |
+| 22 | Fitness Tracker | Data Visualization, Statistics, GUI | 🚧 |
+| 23 | Social Media Analytics | API, Data Mining, Visualization | 🚧 |
+| 24 | Content Management System | Django, Database, User Management | 🚧 |
+| 25 | OCR Text Extractor | Tesseract, Image Processing, NLP | 🚧 |
 
-### **Expert Projects (76-100)**
+### **Expert Projects (1-25)**
 
 Master-level projects featuring distributed systems, advanced ML, cloud integration, and enterprise solutions.
 
 | # | Project Name | Key Concepts | Status |
 |---|--------------|--------------|--------|
-| 76 | Distributed Task Queue | Celery, Redis, Microservices | 🚧 |
-| 77 | AI Chatbot with NLU | Deep Learning, NLP, Dialogue Systems | 🚧 |
-| 78 | Cloud File Storage | AWS/GCP, Scalability, Security | 🚧 |
-| 79 | Real-Time Collaboration Tool | WebSockets, Operational Transform | 🚧 |
-| 80 | Recommendation Engine | Collaborative Filtering, Deep Learning | 🚧 |
-| 81 | Kubernetes Deployment Tool | Container Orchestration, DevOps | 🚧 |
-| 82 | Automated Code Reviewer | AST, Static Analysis, ML | 🚧 |
-| 83 | Search Engine | Indexing, Ranking Algorithms, Crawling | 🚧 |
-| 84 | Fraud Detection System | Anomaly Detection, ML, Real-Time | 🚧 |
-| 85 | Video Game Engine | Game Development, Physics, Rendering | 🚧 |
-| 86 | Load Balancer | Networking, Distributed Systems | 🚧 |
-| 87 | CI/CD Pipeline | Automation, Testing, Deployment | 🚧 |
-| 88 | Graph Database | Data Structures, Query Language | 🚧 |
-| 89 | Neural Network from Scratch | Deep Learning Fundamentals, Math | 🚧 |
-| 90 | Compiler/Interpreter | Parsing, Lexical Analysis, Execution | 🚧 |
-| 91 | IoT Platform | MQTT, Real-Time Data, Cloud Integration | 🚧 |
-| 92 | Distributed Database | CAP Theorem, Replication, Sharding | 🚧 |
-| 93 | Autonomous Agent System | RL, Decision Making, Simulation | 🚧 |
-| 94 | Enterprise Resource Planning | Full-Stack, Complex Business Logic | 🚧 |
-| 95 | AI Model Deployment Platform | MLOps, Containerization, Monitoring | 🚧 |
-| 96 | Decentralized Application | Web3, Smart Contracts, Blockchain | 🚧 |
-| 97 | Advanced Caching System | Redis, Memcached, Cache Strategies | 🚧 |
-| 98 | Stream Processing Engine | Apache Kafka, Real-Time Analytics | 🚧 |
-| 99 | Microservices Architecture | Docker, API Gateway, Service Mesh | 🚧 |
-| 100 | Complete SaaS Platform | Full-Stack, Subscription, Multi-Tenancy | 🚧 |
+| 1 | Distributed Task Queue | Celery, Redis, Microservices | 🚧 |
+| 2 | AI Chatbot with NLU | Deep Learning, NLP, Dialogue Systems | 🚧 |
+| 3 | Cloud File Storage | AWS/GCP, Scalability, Security | 🚧 |
+| 4 | Real-Time Collaboration Tool | WebSockets, Operational Transform | 🚧 |
+| 5 | Recommendation Engine | Collaborative Filtering, Deep Learning | 🚧 |
+| 6 | Kubernetes Deployment Tool | Container Orchestration, DevOps | 🚧 |
+| 7 | Automated Code Reviewer | AST, Static Analysis, ML | 🚧 |
+| 8 | Search Engine | Indexing, Ranking Algorithms, Crawling | 🚧 |
+| 9 | Fraud Detection System | Anomaly Detection, ML, Real-Time | 🚧 |
+| 10 | Video Game Engine | Game Development, Physics, Rendering | 🚧 |
+| 11 | Load Balancer | Networking, Distributed Systems | 🚧 |
+| 12 | CI/CD Pipeline | Automation, Testing, Deployment | 🚧 |
+| 13 | Graph Database | Data Structures, Query Language | 🚧 |
+| 14 | Neural Network from Scratch | Deep Learning Fundamentals, Math | 🚧 |
+| 15 | Compiler/Interpreter | Parsing, Lexical Analysis, Execution | 🚧 |
+| 16 | IoT Platform | MQTT, Real-Time Data, Cloud Integration | 🚧 |
+| 17 | Distributed Database | CAP Theorem, Replication, Sharding | 🚧 |
+| 18 | Autonomous Agent System | RL, Decision Making, Simulation | 🚧 |
+| 19 | Enterprise Resource Planning | Full-Stack, Complex Business Logic | 🚧 |
+| 20 | AI Model Deployment Platform | MLOps, Containerization, Monitoring | 🚧 |
+| 21 | Decentralized Application | Web3, Smart Contracts, Blockchain | 🚧 |
+| 22 | Advanced Caching System | Redis, Memcached, Cache Strategies | 🚧 |
+| 23 | Stream Processing Engine | Apache Kafka, Real-Time Analytics | 🚧 |
+| 24 | Microservices Architecture | Docker, API Gateway, Service Mesh | 🚧 |
+| 25 | Complete SaaS Platform | Full-Stack, Subscription, Multi-Tenancy | 🚧 |
 
 **Legend:**
 - ✅ Complete
