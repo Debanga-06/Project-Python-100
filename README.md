@@ -92,8 +92,8 @@ Perfect for those starting their Python journey. Focus on fundamentals like vari
 | 16 | [Factorial Calculator](./Beginner_Level/Project-16) | Recursion, Mathematical Operations | ✅ |
 | 17 | [To-Do List (File Based)](./Beginner_Level/Project-17) | Lists, GUI , Storage | ✅ |
 | 18 | [Mad Libs Generator](./Beginner_Level/Project-18) | String Formatting, User Input, Creativity | ✅ |
-| 19 | [Hangman Game]() | ASCII , List , User Input, Creativity | 🔄 |
-| 20 | [Word Counter]() | File Operations, Text Processing | 🚧 |
+| 19 | [Hangman Game](./Beginner_Level/Project-19) | ASCII , List , User Input, Creativity | ✅ |
+| 20 | [Word Counter]() | File Operations, Text Processing | 🔄 |
 | 21 | [QR Code Generator]() | Libraries , Image Path , Functions | 🚧 |
 | 22 | [Currency Converter]() | API Integration, JSON, Calculations | 🚧 |
 | 23 | [Email Slicer]() | Pattern Analysis, Email Detection, Function | 🚧 |
@@ -327,8 +327,8 @@ Expert (1-25)
 ## 📊 Project Status
 
 - **Total Projects Planned:** 100
-- **Completed:** 19
-- **In Progress:** 81
+- **Completed:** 20
+- **In Progress:** 80
 - **Last Updated:** December 2025
 
 ---
