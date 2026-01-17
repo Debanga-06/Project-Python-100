@@ -100,11 +100,11 @@ Perfect for those starting their Python journey. Focus on fundamentals like vari
 | 24 | [Simple & Compound Interest Calculator](./Beginner_Level/Project-24) | Calculations, User Input, Formatting | ✅ |
 | 25 | [Typing Speed Test](./Beginner_Level/Project-25) | Libraries , Functions , Calculation | ✅ |
 | 26 | [Simple Quiz Game](./Beginner_Level/Project-26) | Lists, Dictionaries, Scoring System | ✅ |
-| 27 | [Text Analyzer]() | String Methods, File Reading, Statistics | 🔄 |
-| 28 | [Simple Stopwatch]() | Time Module, GUI, Control Flow | 🔄 |
-| 29 | [Age Calculator]() | DateTime, Date Arithmetic | 🔄 |
-| 30 | [Simple Contact Book]() | File I/O, CRUD, Data Management | 🔄 |
-| 31 | [Flashcards App (CLI)]() | File I/O, JSON, Data Management | 🔄 |
+| 27 | [Text Analyzer](./Beginner_Level/Project-27) | String Methods, File Reading, Statistics | ✅ |
+| 28 | [Simple Stopwatch](./Beginner_Level/Project-28) | Time Module, GUI, Control Flow | ✅ |
+| 29 | [Age Calculator](./Beginner_Level/Project-29) | DateTime, Date Arithmetic | ✅ |
+| 30 | [Simple Contact Book](./Beginner_Level/Project-30) | File I/O, CRUD, Data Management | ✅ |
+| 31 | [Flashcards App (CLI)](./Beginner_Level/Project-31) | File I/O, JSON, Data Management | ✅ |
 
 ### **Intermediate Projects (1-25)**
 
@@ -115,28 +115,28 @@ Build on fundamentals with API integration, web scraping, GUI development, and d
 | 1 | [Weather App](./Intermediate_Level/Project-01) | API Integration, JSON, GUI | ✅ |
 | 2 | [URL Shortener](./Intermediate_Level/Project-02) | Database, Hashing, Web Development | ✅ |
 | 3 | [QR Code Generator](./Intermediate_Level/Project-03) | Libraries, Image Processing | ✅ |
-| 4 | Web Scraper | BeautifulSoup, Requests, HTML Parsing | 🔄 |
-| 5 | Email Sender | SMTP, Email Libraries, Automation | 🚧 |
-| 6 | Expense Tracker | Database, Data Visualization, Analysis | 🚧 |
-| 7 | Markdown to HTML Converter | Regex, File Operations, Parsing | 🚧 |
-| 8 | Flashcard App | GUI, Data Persistence, Study Tool | 🚧 |
-| 9 | Password Manager | Encryption, Security, Database | 🚧 |
-| 10 | Pomodoro Timer | GUI, Time Management, Notifications | 🚧 |
-| 11 | RSS Feed Reader | XML Parsing, Web Feeds, Display | 🚧 |
-| 12 | Image Resizer | PIL/Pillow, Batch Processing | 🚧 |
-| 13 | YouTube Downloader | pytube, File Management | 🚧 |
-| 14 | Snake Game | Pygame, Game Development | 🚧 |
-| 15 | Chat Application | Sockets, Networking, Threading | 🚧 |
-| 16 | Typing Speed Test | GUI, Timing, Statistics | 🚧 |
-| 17 | Sudoku Solver | Backtracking Algorithm, Recursion | 🚧 |
-| 18 | Alarm Clock | Time Module, Audio, Threading | 🚧 |
-| 19 | PDF Merger | PyPDF2, File Operations | 🚧 |
-| 20 | Screen Recorder | Screen Capture, Video Processing | 🚧 |
-| 21 | Music Player | Pygame, GUI, Playlist Management | 🚧 |
-| 22 | Hangman Game | Game Logic, File I/O, GUI | 🚧 |
-| 23 | Tic-Tac-Toe AI | Game Theory, Minimax Algorithm | 🚧 |
-| 24 | Language Translator | API, GUI, Multiple Languages | 🚧 |
-| 25 | Budget Planner | Data Analysis, Visualization, Reports | 🚧 |
+| 4 | [Web Scraper]() | BeautifulSoup, Requests, HTML Parsing | 🔄 |
+| 5 | [Email Sender]() | SMTP, Email Libraries, Automation | 🔄 |
+| 6 | [Expense Tracker]() | Database, Data Visualization, Analysis | 🔄 |
+| 7 | [Markdown to HTML Converter]() | Regex, File Operations, Parsing | 🔄 |
+| 8 | [Flashcard App]() | GUI, Data Persistence, Study Tool | 🔄 |
+| 9 | [Password Manager]() | Encryption, Security, Database | 🔄 |
+| 10 | [Pomodoro Timer]() | GUI, Time Management, Notifications | 🔄 |
+| 11 | [RSS Feed Reader]() | XML Parsing, Web Feeds, Display | 🚧 |
+| 12 | [Image Resizer]() | PIL/Pillow, Batch Processing | 🚧 |
+| 13 | [YouTube Downloader]() | pytube, File Management | 🚧 |
+| 14 | [Snake Game]() | Pygame, Game Development | 🚧 |
+| 15 | [Chat Application]() | Sockets, Networking, Threading | 🚧 |
+| 16 | [Typing Speed Test]() | GUI, Timing, Statistics | 🚧 |
+| 17 | [Sudoku Solver]() | Backtracking Algorithm, Recursion | 🚧 |
+| 18 | [Alarm Clock]() | Time Module, Audio, Threading | 🚧 |
+| 19 | [PDF Merger]() | PyPDF2, File Operations | 🚧 |
+| 20 | [Screen Recorder]() | Screen Capture, Video Processing | 🚧 |
+| 21 | [Music Player]() | Pygame, GUI, Playlist Management | 🚧 |
+| 22 | [Hangman Game]() | Game Logic, File I/O, GUI | 🚧 |
+| 23 | [Tic-Tac-Toe AI]() | Game Theory, Minimax Algorithm | 🚧 |
+| 24 | [Language Translator]() | API, GUI, Multiple Languages | 🚧 |
+| 25 | [Budget Planner]() | Data Analysis, Visualization, Reports | 🚧 |
 
 ### **Advanced Projects (1-25)**
 
@@ -326,9 +326,9 @@ Expert (1-25)
 
 ## 📊 Project Status
 
-- **Total Projects Planned:** 100
-- **Completed:** 29
-- **In Progress:** 71
+- **Total Projects Planned:** 106
+- **Completed:** 34
+- **In Progress:** 72
 - **Last Updated:** January 2026
 
 ---
