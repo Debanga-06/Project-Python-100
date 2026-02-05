@@ -130,7 +130,7 @@ Build on fundamentals with API integration, web scraping, GUI development, and d
 | 16 | [Typing Speed Test]() | GUI, Timing, Statistics | 🚧 |
 | 17 | [Sudoku Solver]() | Backtracking Algorithm, Recursion | 🚧 |
 | 18 | [Alarm Clock]() | Time Module, Audio, Threading | 🚧 |
-| 19 | [PDF Merger]() | PyPDF2, File Operations | 🚧 |
+| 19 | [PDF Merger](./Intermediate_Level/Project-19) | PyPDF2, File Operations | ✅ |
 | 20 | [Screen Recorder]() | Screen Capture, Video Processing | 🚧 |
 | 21 | [Music Player]() | Pygame, GUI, Playlist Management | 🚧 |
 | 22 | [Hangman Game]() | Game Logic, File I/O, GUI | 🚧 |
