@@ -127,7 +127,7 @@ Build on fundamentals with API integration, web scraping, GUI development, and d
 | 13 | [YouTube Downloader](./Intermediate_Level/Project-13) | pytube, File Management | ✅ |
 | 14 | [Snake Game]() | Pygame, Game Development | 🔄 |
 | 15 | [Chat Application]() | Sockets, Networking, Threading | 🔄 |
-| 16 | [Typing Speed Test]() | GUI, Timing, Statistics | 🔄 |
+| 16 | [Typing Speed Test](./Intermediate_Level/Project-16) | GUI, Timing, Statistics | ✅ |
 | 17 | [Sudoku Solver]() | Backtracking Algorithm, Recursion | 🔄 |
 | 18 | [Alarm Clock]() | Time Module, Audio, Threading | 🔄 |
 | 19 | [PDF Merger](./Intermediate_Level/Project-19) | PyPDF2, File Operations | ✅ |
