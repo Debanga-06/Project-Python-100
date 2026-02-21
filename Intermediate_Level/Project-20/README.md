@@ -97,5 +97,6 @@ Developed by **Jiban Maji**
 📍 Brainware University, Barasat, West Bengal, India  
 
 GitHub Profile: [https://github.com/Jiban0507](https://github.com/Jiban0507)  
-GitHub Repository: `https://github.com/Jiban0507/screen-recorder` [(github.com in Bing)](https://www.bing.com/search?q="https%3A%2F%2Fgithub.com%2FJiban0507%2Fscreen-recorder")
+GitHub Repository: `https://github.com/Jiban0507/screen-recorder` [(github.com in Bing)](https://github.com/Jiban0507/Project-Python-100/tree/main/Intermediate_Level/Project-20)
+
 
