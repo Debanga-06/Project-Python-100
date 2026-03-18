@@ -131,7 +131,7 @@ Build on fundamentals with API integration, web scraping, GUI development, and d
 | 17 | [Sudoku Solver](./Intermediate_Level/Project-17) | Backtracking Algorithm, Recursion | ✅ |
 | 18 | [Alarm Clock](./Intermediate_Level/Project-18) | Time Module, Audio, Threading | ✅ |
 | 19 | [PDF Merger](./Intermediate_Level/Project-19) | PyPDF2, File Operations | ✅ |
-| 20 | [Screen Recorder]() | Screen Capture, Video Processing | 🔄 |
+| 20 | [Screen Recorder](./Intermediate_Level/Project-20) | Screen Capture, Video Processing | ✅ |
 | 21 | [Music Player]() | Pygame, GUI, Playlist Management | 🔄 |
 | 22 | [Hangman Game]() | Game Logic, File I/O, GUI | 🔄 |
 | 23 | [Tic-Tac-Toe AI](./Intermediate_Level/Project-23) | Game Theory, Minimax Algorithm | ✅ |
