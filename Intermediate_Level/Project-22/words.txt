@@ -1,0 +1,9 @@
+python
+programming
+hangman
+developer
+keyboard
+computer
+algorithm
+function
+variable
