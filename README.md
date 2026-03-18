@@ -133,7 +133,7 @@ Build on fundamentals with API integration, web scraping, GUI development, and d
 | 19 | [PDF Merger](./Intermediate_Level/Project-19) | PyPDF2, File Operations | ✅ |
 | 20 | [Screen Recorder](./Intermediate_Level/Project-20) | Screen Capture, Video Processing | ✅ |
 | 21 | [Music Player](./Intermediate_Level/Project-21) | Pygame, GUI, Playlist Management | ✅ |
-| 22 | [Hangman Game]() | Game Logic, File I/O, GUI | 🔄 |
+| 22 | [Hangman Game](./Intermediate_Level/Project-22) | Game Logic, File I/O, GUI | ✅ |
 | 23 | [Tic-Tac-Toe AI](./Intermediate_Level/Project-23) | Game Theory, Minimax Algorithm | ✅ |
 | 24 | [Language Translator]() | API, GUI, Multiple Languages | 🔄 |
 | 25 | [Budget Planner]() | Data Analysis, Visualization, Reports | 🔄 |
