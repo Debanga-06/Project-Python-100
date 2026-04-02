@@ -22,6 +22,7 @@ RED      = '#f85149'
 BLUE     = '#58a6ff'
 ORANGE   = '#d29922'
 PURPLE   = '#bc8cff'
+WHITE    = '#ffffff'
 
 
 class Visualizer:

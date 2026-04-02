@@ -108,7 +108,11 @@ class ModelEnsemble:
 
         preds_s = model.predict(Xte_seq, verbose=0).ravel()
         preds   = scaler_y.inverse_transform(preds_s.reshape(-1, 1)).ravel()
-        actual  = y_test[seq:]
+        # Use raw (unscaled) y_test aligned to the sequence window offset
+        actual  = y_test[seq: seq + len(preds)]
+        # Trim to same length (safety)
+        n = min(len(preds), len(actual))
+        preds, actual = preds[:n], actual[:n]
 
         self.models['LSTM'] = model
         return preds, actual
@@ -198,52 +202,125 @@ class ModelEnsemble:
     # Forecast
     # ──────────────────────────────────────────────────────────────
     def forecast(self, df, engineer, days: int) -> pd.DataFrame:
-        """Iterative multi-step forecast for `days` ahead."""
-        forecasts = {name: [] for name in self.models}
-        sim_df    = df.copy()
+        """
+        Iterative multi-step forecast for `days` ahead.
+
+        Strategy: snapshot the last valid feature row from the fully-built
+        df (after feature engineering).  For each step we predict the next
+        close price, then update the lag-based features in that snapshot row
+        so the next iteration sees a shifted window — without calling
+        build_forecast_row (which calls dropna and loses the new row).
+        """
+        forecasts  = {name: [] for name in self.models}
+
+        # ── Build full feature matrix once ────────────────────────
+        feat_matrix = df[engineer.feature_cols].values   # (N, F)
+        close_hist  = list(df['Close'].values)
+
+        # Last known feature row as a mutable copy
+        last_feat = feat_matrix[-1].copy()               # shape (F,)
+
+        # Map feature column names → indices for fast update
+        col_idx = {c: i for i, c in enumerate(engineer.feature_cols)}
+
+        # Identify lag columns so we can shift them
+        lag_close_cols  = [c for c in engineer.feature_cols if c.startswith('Close_lag_')]
+        lag_return_cols = [c for c in engineer.feature_cols if c.startswith('Return_lag_')]
+
+        def _update_lags(feat_row, new_close, prev_close):
+            """Shift lag features by one step."""
+            # Close_lag_N  → shift: lag_1 gets prev close, lag_2 gets old lag_1 …
+            lag_nums = sorted(
+                [int(c.split('_')[-1]) for c in lag_close_cols], reverse=True
+            )
+            for lag in lag_nums:
+                src = f'Close_lag_{lag - 1}' if lag > 1 else None
+                dst = f'Close_lag_{lag}'
+                if dst in col_idx:
+                    feat_row[col_idx[dst]] = (
+                        feat_row[col_idx[src]] if src and src in col_idx
+                        else prev_close
+                    )
+            # Return_lag_N
+            ret_nums = sorted(
+                [int(c.split('_')[-1]) for c in lag_return_cols], reverse=True
+            )
+            new_ret = (new_close - prev_close) / (prev_close + 1e-10)
+            for lag in ret_nums:
+                src = f'Return_lag_{lag - 1}' if lag > 1 else None
+                dst = f'Return_lag_{lag}'
+                if dst in col_idx:
+                    feat_row[col_idx[dst]] = (
+                        feat_row[col_idx[src]] if src and src in col_idx
+                        else new_ret
+                    )
+            return feat_row
+
+        # ── For LSTM: keep a rolling scaled window ─────────────────
+        lstm_window = None
+        if 'LSTM' in self.models:
+            seq   = self.cfg.seq_len
+            X_all = self.scalers['lstm_X'].transform(feat_matrix)
+            if len(X_all) >= seq:
+                lstm_window = list(X_all[-seq:])   # list of (F,) arrays
+
+        prev_close = close_hist[-1]
 
         for step in range(days):
-            sim_df = engineer.build_forecast_row(sim_df)
-            feat   = sim_df[engineer.feature_cols].values
+            row2d = last_feat.reshape(1, -1)        # (1, F)
 
-            row_rf  = self.scalers['rf'].transform(feat[-1:])
-            row_xgb = self.scalers['xgb'].transform(feat[-1:])
-
+            # ── RF prediction ──────────────────────────────────────
             if 'RandomForest' in self.models:
+                row_rf = self.scalers['rf'].transform(row2d)
                 forecasts['RandomForest'].append(
-                    self.models['RandomForest'].predict(row_rf)[0])
+                    float(self.models['RandomForest'].predict(row_rf)[0])
+                )
 
+            # ── XGB prediction ─────────────────────────────────────
             if 'XGBoost' in self.models:
+                row_xgb = self.scalers['xgb'].transform(row2d)
                 forecasts['XGBoost'].append(
-                    self.models['XGBoost'].predict(row_xgb)[0])
+                    float(self.models['XGBoost'].predict(row_xgb)[0])
+                )
 
-            if 'LSTM' in self.models:
-                seq     = self.cfg.seq_len
-                X_s     = self.scalers['lstm_X'].transform(feat)
-                if len(X_s) >= seq:
-                    X_seq = X_s[-seq:].reshape(1, seq, feat.shape[1])
-                    p_s   = self.models['LSTM'].predict(X_seq, verbose=0)[0][0]
-                    p     = self.scalers['lstm_y'].inverse_transform([[p_s]])[0][0]
-                    forecasts['LSTM'].append(p)
-                else:
-                    forecasts['LSTM'].append(sim_df['Close'].iloc[-1])
+            # ── LSTM prediction ────────────────────────────────────
+            if 'LSTM' in self.models and lstm_window is not None:
+                X_seq = np.array(lstm_window).reshape(
+                    1, len(lstm_window), feat_matrix.shape[1]
+                )
+                p_s = self.models['LSTM'].predict(X_seq, verbose=0)[0][0]
+                p   = float(
+                    self.scalers['lstm_y'].inverse_transform([[p_s]])[0][0]
+                )
+                forecasts['LSTM'].append(p)
 
-            # Use ensemble mean as next day's simulated close
-            available = [v[-1] for v in forecasts.values() if v]
-            next_close = np.mean(available)
-            last_row   = sim_df.iloc[-1:].copy()
-            last_row.index  = [last_row.index[0] + pd.Timedelta(days=1)]
-            last_row['Close']  = next_close
-            last_row['Open']   = next_close
-            last_row['High']   = next_close * 1.005
-            last_row['Low']    = next_close * 0.995
-            last_row['Volume'] = sim_df['Volume'].mean()
-            sim_df = pd.concat([sim_df, last_row])
+            # ── Ensemble mean → next simulated close ───────────────
+            available  = [v[-1] for v in forecasts.values() if v]
+            next_close = float(np.mean(available))
 
-        # Build forecast dataframe
+            # ── Update feature row for next step ───────────────────
+            last_feat = _update_lags(last_feat.copy(), next_close, prev_close)
+
+            # Also update LSTM window
+            if lstm_window is not None:
+                new_scaled = self.scalers['lstm_X'].transform(
+                    last_feat.reshape(1, -1)
+                )[0]
+                lstm_window.pop(0)
+                lstm_window.append(new_scaled)
+
+            prev_close = next_close
+
+        # ── Build output DataFrame ─────────────────────────────────
         last_date = df.index[-1]
-        dates = pd.bdate_range(start=last_date + pd.Timedelta(days=1), periods=days)
-        fc_df = pd.DataFrame(forecasts, index=dates[:len(next(iter(forecasts.values())))])
+        dates     = pd.bdate_range(
+            start=last_date + pd.Timedelta(days=1), periods=days
+        )
+        n = min(days, min(len(v) for v in forecasts.values()))
+        fc_df = pd.DataFrame(
+            {k: v[:n] for k, v in forecasts.items()},
+            index=dates[:n]
+        )
         fc_df['ensemble'] = fc_df.mean(axis=1)
         return fc_df
 
