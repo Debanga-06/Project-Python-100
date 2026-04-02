@@ -1,0 +1,22 @@
+# ── Core ──────────────────────────────────────────────────────────
+numpy>=1.24
+opencv-python>=4.9
+opencv-contrib-python>=4.9     # required for LBPH / Eigenfaces / Fisherfaces
+
+# ── Deep Learning (optional but recommended) ──────────────────────
+# Install ONE of these for deep embedding recognition:
+face_recognition>=1.3          # dlib-based ResNet-128 (recommended)
+# deepface>=0.0.80             # alternative: FaceNet / ArcFace via DeepFace
+
+# ── Anti-Spoofing (optional) ──────────────────────────────────────
+# dlib>=19.24                  # for 68-point landmark blink detection
+# mtcnn>=0.1.1                 # for MTCNN face detector
+
+# ── Database & Utils ──────────────────────────────────────────────
+matplotlib>=3.8
+
+# ── Notes ─────────────────────────────────────────────────────────
+# face_recognition requires cmake + dlib build tools:
+#   Ubuntu : sudo apt install cmake build-essential
+#   Windows: pip install cmake; pip install dlib
+#   Mac    : brew install cmake; pip install dlib
