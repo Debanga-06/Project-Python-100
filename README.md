@@ -4,7 +4,7 @@
 
 ![Python Version](https://img.shields.io/badge/python-3.8+-blue.svg)
 ![Projects](https://img.shields.io/badge/projects-100-green.svg)
-![License](https://img.shields.io/badge/license-MIT-blue.svg)
+![License](https://img.shields.io/github/license/Debanga-06/Project-Python-100?style=flat-square&color=e8b84b)
 ![Contributions](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)
 
 **Master Python Through 100 Real-World Projects**
