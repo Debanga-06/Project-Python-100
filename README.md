@@ -144,26 +144,26 @@ Dive into complex applications with machine learning, data science, automation, 
 
 | # | Project Name | Key Concepts | Status |
 |---|--------------|--------------|--------|
-| 1 | Stock Price Predictor | Machine Learning, Data Analysis, APIs | 🚧 |
-| 2 | Facial Recognition System | OpenCV, Deep Learning, Computer Vision | 🚧 |
-| 3 | Blog Website | Flask/Django, Database, Authentication | 🚧 |
-| 4 | Task Automation Bot | Selenium, Web Automation | 🚧 |
-| 5 | Movie Recommendation System | ML Algorithms, Data Processing | 🚧 |
-| 6 | Sentiment Analysis Tool | NLP, Text Classification, ML | 🚧 |
-| 7 | RESTful API | Flask/FastAPI, Database, CRUD | 🚧 |
-| 8 | File Encryption Tool | Cryptography, Security, File Operations | 🚧 |
-| 9 | Twitter Bot | API Integration, Automation, Scheduling | 🚧 |
-| 10 | Image Recognition Classifier | TensorFlow/PyTorch, CNN, Training | 🚧 |
-| 11 | Voice Assistant | Speech Recognition, Text-to-Speech | 🚧 |
-| 12 | Network Scanner | Socket Programming, Security | 🚧 |
-| 13 | Blockchain Implementation | Data Structures, Cryptography, Consensus | 🚧 |
-| 14 | E-commerce Platform | Full-Stack, Payment Integration, Database | 🚧 |
-| 15 | Real-Time Chat App | WebSockets, Database, Authentication | 🚧 |
-| 16 | Data Dashboard | Plotly/Dash, Real-Time Updates | 🚧 |
-| 17 | Code Plagiarism Detector | NLP, Similarity Algorithms | 🚧 |
-| 18 | Stock Trading Bot | APIs, Algorithmic Trading, Analysis | 🚧 |
-| 19 | News Aggregator | Web Scraping, NLP, Categorization | 🚧 |
-| 20 | Video Streaming Platform | Flask, Video Processing, Database | 🚧 |
+| 1 | [Stock Price Predictor](./Advanced_Level/Project-01) | Machine Learning, Data Analysis, APIs | ✅ |
+| 2 | [Facial Recognition System](./Advanced_Level/Project-02) | OpenCV, Deep Learning, Computer Vision | 🔄 |
+| 3 | [Blog Website](./Advanced_Level/Project-03) | Flask/Django, Database, Authentication | 🔄 |
+| 4 | [Task Automation Bot](./Advanced_Level/Project-04) | Selenium, Web Automation | 🔄 |
+| 5 | [Movie Recommendation System](./Advanced_Level/Project-05) | ML Algorithms, Data Processing | 🔄 |
+| 6 | [Sentiment Analysis Tool](./Advanced_Level/Project-06) | NLP, Text Classification, ML | 🚧 |
+| 7 | [RESTful API](./Advanced_Level/Project-07) | Flask/FastAPI, Database, CRUD | 🚧 |
+| 8 | [File Encryption Tool](./Advanced_Level/Project-08) | Cryptography, Security, File Operations | 🚧 |
+| 9 | [Twitter Bot](./Advanced_Level/Project-09) | API Integration, Automation, Scheduling | 🚧 |
+| 10 | [Image Recognition Classifier](./Advanced_Level/Project-10) | TensorFlow/PyTorch, CNN, Training | 🚧 |
+| 11 | [Voice Assistant](./Advanced_Level/Project-11) | Speech Recognition, Text-to-Speech | 🚧 |
+| 12 | [Network Scanner](./Advanced_Level/Project-12) | Socket Programming, Security | 🚧 |
+| 13 | [Blockchain Implementation](./Advanced_Level/Project-13) | Data Structures, Cryptography, Consensus | 🚧 |
+| 14 | [E-commerce Platform](./Advanced_Level/Project-14) | Full-Stack, Payment Integration, Database | 🚧 |
+| 15 | [Real-Time Chat App](./Advanced_Level/Project-15) | WebSockets, Database, Authentication | 🚧 |
+| 16 | [Data Dashboard](./Advanced_Level/Project-16) | Plotly/Dash, Real-Time Updates | 🚧 |
+| 17 | [Code Plagiarism Detector](./Advanced_Level/Project-17) | NLP, Similarity Algorithms | 🚧 |
+| 18 | [Stock Trading Bot](./Advanced_Level/Project-18) | APIs, Algorithmic Trading, Analysis | 🚧 |
+| 19 | [News Aggregator](./Advanced_Level/Project-19) | Web Scraping, NLP, Categorization | 🚧 |
+| 20 | [Video Streaming Platform](./Advanced_Level/Project-20) | Flask, Video Processing, Database | 🚧 |
 | 21 | Automated Testing Framework | Unit Testing, Integration Testing | 🚧 |
 | 22 | Fitness Tracker | Data Visualization, Statistics, GUI | 🚧 |
 | 23 | Social Media Analytics | API, Data Mining, Visualization | 🚧 |
@@ -341,7 +341,7 @@ Special recognition to contributors who have made significant non-code contribut
 ### 📈 Contribution Activity
 
 ```
-Total Contributors:     1
+Total Contributors:     4
 Total Commits:         100+
 Total Pull Requests:    34
 Total Issues Resolved:  0
@@ -433,9 +433,9 @@ Expert (1-25)
 ## 📊 Project Status
 
 - **Total Projects Planned:** 106
-- **Completed:** 56
-- **In Progress:** 50
-- **Last Updated:** March 2026
+- **Completed:** 57
+- **In Progress:** 49
+- **Last Updated:** Apr 2026
 
 ---
 
