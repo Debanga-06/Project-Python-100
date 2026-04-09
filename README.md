@@ -146,7 +146,7 @@ Dive into complex applications with machine learning, data science, automation, 
 |---|--------------|--------------|--------|
 | 1 | [Stock Price Predictor](./Advanced_Level/Project-01) | Machine Learning, Data Analysis, APIs | ✅ |
 | 2 | [Facial Recognition System](./Advanced_Level/Project-02) | OpenCV, Deep Learning, Computer Vision | ✅ |
-| 3 | [Blog Website](./Advanced_Level/Project-03) | Flask/Django, Database, Authentication | 🔄 |
+| 3 | [Blog Website](./Advanced_Level/Project-03) | Flask/Django, Database, Authentication | ✅ |
 | 4 | [Task Automation Bot](./Advanced_Level/Project-04) | Selenium, Web Automation | 🔄 |
 | 5 | [Movie Recommendation System](./Advanced_Level/Project-05) | ML Algorithms, Data Processing | 🔄 |
 | 6 | [Sentiment Analysis Tool](./Advanced_Level/Project-06) | NLP, Text Classification, ML | 🚧 |
@@ -433,8 +433,8 @@ Expert (1-25)
 ## 📊 Project Status
 
 - **Total Projects Planned:** 106
-- **Completed:** 76
-- **In Progress:** 30
+- **Completed:** 60
+- **In Progress:** 46
 - **Last Updated:** Apr 2026
 
 ---
