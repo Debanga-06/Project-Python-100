@@ -1,0 +1,81 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container">
+
+  <!-- Hero -->
+  <div class="py-5 my-3 text-center bg-dark text-white rounded-4 px-4">
+    <h1 class="display-4 fw-bold"><i class="fas fa-pen-nib text-warning me-2"></i>PyBlog</h1>
+    <p class="lead text-secondary">A full-featured blog platform built with Flask, SQLAlchemy & Bootstrap</p>
+    <a href="{{ url_for('blog.index') }}" class="btn btn-warning btn-lg me-2">Explore Posts</a>
+    {% if not current_user.is_authenticated %}
+    <a href="{{ url_for('auth.register') }}" class="btn btn-outline-light btn-lg">Join Now</a>
+    {% else %}
+    <a href="{{ url_for('blog.create_post') }}" class="btn btn-outline-light btn-lg">Write a Post</a>
+    {% endif %}
+  </div>
+
+  <!-- Featured Posts -->
+  {% if featured_posts %}
+  <h3 class="mt-5 mb-4 fw-bold"><i class="fas fa-fire text-danger me-2"></i>Trending Posts</h3>
+  <div class="row g-4">
+    {% for post in featured_posts %}
+    <div class="col-md-4">
+      <div class="card h-100 shadow-sm border-0 rounded-4">
+        <div class="card-body">
+          {% if post.category %}
+            <span class="badge bg-warning text-dark mb-2">{{ post.category.name }}</span>
+          {% endif %}
+          <h5 class="card-title fw-bold">
+            <a href="{{ url_for('blog.post_detail', slug=post.slug) }}" class="text-decoration-none text-dark">
+              {{ post.title }}
+            </a>
+          </h5>
+          <p class="card-text text-muted small">{{ post.summary or post.content[:120] }}...</p>
+        </div>
+        <div class="card-footer bg-transparent border-0 d-flex justify-content-between small text-muted">
+          <span><i class="fas fa-user me-1"></i>{{ post.author.username }}</span>
+          <span><i class="fas fa-eye me-1"></i>{{ post.views }} views</span>
+          <span><i class="fas fa-heart me-1"></i>{{ post.like_count() }}</span>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+  {% endif %}
+
+  <!-- Recent Posts -->
+  {% if recent_posts %}
+  <h3 class="mt-5 mb-4 fw-bold"><i class="fas fa-clock text-primary me-2"></i>Recent Posts</h3>
+  <div class="row g-3">
+    {% for post in recent_posts %}
+    <div class="col-md-6">
+      <div class="card border-0 shadow-sm rounded-4 h-100">
+        <div class="card-body">
+          <h6 class="fw-bold">
+            <a href="{{ url_for('blog.post_detail', slug=post.slug) }}" class="text-decoration-none text-dark">
+              {{ post.title }}
+            </a>
+          </h6>
+          <p class="text-muted small mb-1">{{ post.summary or post.content[:80] }}...</p>
+          <small class="text-muted">By {{ post.author.username }} · {{ post.created_at.strftime('%b %d, %Y') }}</small>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+  {% endif %}
+
+  <!-- Categories -->
+  {% if categories %}
+  <h3 class="mt-5 mb-4 fw-bold"><i class="fas fa-folder text-success me-2"></i>Browse Categories</h3>
+  <div class="d-flex flex-wrap gap-2">
+    {% for cat in categories %}
+    <a href="{{ url_for('blog.index', category=cat.id) }}" class="btn btn-outline-dark rounded-pill px-4">
+      {{ cat.name }}
+    </a>
+    {% endfor %}
+  </div>
+  {% endif %}
+
+</div>
+{% endblock %}

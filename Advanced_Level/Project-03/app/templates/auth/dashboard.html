@@ -1,0 +1,96 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container">
+  <h3 class="fw-bold mb-4 mt-2"><i class="fas fa-tachometer-alt me-2 text-warning"></i>My Dashboard</h3>
+
+  <!-- Stats -->
+  <div class="row g-3 mb-5">
+    <div class="col-md-3">
+      <div class="card bg-dark text-white border-0 rounded-4 text-center p-3">
+        <h2 class="fw-bold text-warning">{{ posts | length }}</h2>
+        <p class="mb-0">Posts</p>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card bg-dark text-white border-0 rounded-4 text-center p-3">
+        <h2 class="fw-bold text-danger">{{ total_likes }}</h2>
+        <p class="mb-0">Total Likes</p>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card bg-dark text-white border-0 rounded-4 text-center p-3">
+        <h2 class="fw-bold text-info">{{ total_views }}</h2>
+        <p class="mb-0">Total Views</p>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card bg-dark text-white border-0 rounded-4 text-center p-3">
+        <h2 class="fw-bold text-success">{{ total_comments }}</h2>
+        <p class="mb-0">Comments</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Posts Table -->
+  <div class="card border-0 shadow-sm rounded-4">
+    <div class="card-body">
+      <div class="d-flex justify-content-between align-items-center mb-3">
+        <h5 class="fw-bold mb-0">My Posts</h5>
+        <a href="{{ url_for('blog.create_post') }}" class="btn btn-warning btn-sm rounded-pill px-3">
+          <i class="fas fa-plus me-1"></i>New Post
+        </a>
+      </div>
+      <div class="table-responsive">
+        <table class="table table-hover align-middle">
+          <thead class="table-dark">
+            <tr>
+              <th>Title</th>
+              <th>Status</th>
+              <th>Views</th>
+              <th>Likes</th>
+              <th>Comments</th>
+              <th>Date</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for post in posts %}
+            <tr>
+              <td>
+                <a href="{{ url_for('blog.post_detail', slug=post.slug) }}"
+                   class="text-decoration-none fw-semibold text-dark">{{ post.title[:50] }}{% if post.title|length > 50 %}...{% endif %}</a>
+              </td>
+              <td>
+                {% if post.is_published %}
+                  <span class="badge bg-success rounded-pill">Published</span>
+                {% else %}
+                  <span class="badge bg-secondary rounded-pill">Draft</span>
+                {% endif %}
+              </td>
+              <td>{{ post.views }}</td>
+              <td>{{ post.like_count() }}</td>
+              <td>{{ post.comment_count() }}</td>
+              <td><small class="text-muted">{{ post.created_at.strftime('%b %d') }}</small></td>
+              <td>
+                <div class="d-flex gap-1">
+                  <a href="{{ url_for('blog.edit_post', post_id=post.id) }}"
+                     class="btn btn-sm btn-outline-secondary rounded-pill">Edit</a>
+                  <form method="POST" action="{{ url_for('blog.delete_post', post_id=post.id) }}"
+                        onsubmit="return confirm('Delete?')">
+                    <button class="btn btn-sm btn-outline-danger rounded-pill">Delete</button>
+                  </form>
+                </div>
+              </td>
+            </tr>
+            {% else %}
+            <tr>
+              <td colspan="7" class="text-center text-muted py-4">No posts yet. <a href="{{ url_for('blog.create_post') }}">Write your first post!</a></td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

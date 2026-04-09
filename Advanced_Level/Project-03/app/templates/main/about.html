@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-lg-8 text-center py-5">
+      <h1 class="display-5 fw-bold mb-4"><i class="fas fa-info-circle me-2 text-warning"></i>About PyBlog</h1>
+      <p class="lead text-muted mb-4">
+        PyBlog is a full-featured blog platform built as part of the
+        <strong>Python Project #100</strong> series — Project #04.
+      </p>
+      <div class="row g-4 text-start mt-3">
+        <div class="col-md-6">
+          <div class="card border-0 shadow-sm rounded-4 h-100 p-3">
+            <h5 class="fw-bold"><i class="fas fa-code me-2 text-warning"></i>Tech Stack</h5>
+            <ul class="list-unstyled mt-2 text-muted">
+              <li>✅ Flask (Python Web Framework)</li>
+              <li>✅ SQLAlchemy ORM + SQLite/PostgreSQL</li>
+              <li>✅ Flask-Login (Authentication)</li>
+              <li>✅ Flask-Bcrypt (Password Hashing)</li>
+              <li>✅ Flask-Migrate (DB Migrations)</li>
+              <li>✅ Flask-WTF (CSRF + Forms)</li>
+              <li>✅ Bootstrap 5 (UI)</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card border-0 shadow-sm rounded-4 h-100 p-3">
+            <h5 class="fw-bold"><i class="fas fa-star me-2 text-warning"></i>Features</h5>
+            <ul class="list-unstyled mt-2 text-muted">
+              <li>✅ User Registration & Login</li>
+              <li>✅ Create, Edit, Delete Posts</li>
+              <li>✅ Categories & Tags</li>
+              <li>✅ Like & Comment System</li>
+              <li>✅ Draft / Publish Toggle</li>
+              <li>✅ Search & Filter</li>
+              <li>✅ User Dashboard</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

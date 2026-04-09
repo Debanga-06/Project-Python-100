@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-lg-8">
+      <div class="card border-0 shadow-sm rounded-4 mt-3">
+        <div class="card-body p-4 p-md-5">
+          <h3 class="fw-bold mb-4"><i class="fas fa-edit me-2 text-warning"></i>Edit Post</h3>
+          <form method="POST">
+            {{ form.hidden_tag() }}
+            <div class="mb-3">
+              {{ form.title.label(class="form-label fw-semibold") }}
+              {{ form.title(class="form-control rounded-3 form-control-lg") }}
+              {% for e in form.title.errors %}<div class="text-danger small">{{ e }}</div>{% endfor %}
+            </div>
+            <div class="mb-3">
+              {{ form.summary.label(class="form-label fw-semibold") }}
+              {{ form.summary(class="form-control rounded-3") }}
+            </div>
+            <div class="mb-3">
+              {{ form.category_id.label(class="form-label fw-semibold") }}
+              {{ form.category_id(class="form-select rounded-3") }}
+            </div>
+            <div class="mb-3">
+              {{ form.tags.label(class="form-label fw-semibold") }}
+              {{ form.tags(class="form-control rounded-3") }}
+            </div>
+            <div class="mb-4">
+              {{ form.content.label(class="form-label fw-semibold") }}
+              {{ form.content(class="form-control rounded-3", rows=12) }}
+              {% for e in form.content.errors %}<div class="text-danger small">{{ e }}</div>{% endfor %}
+            </div>
+            <div class="mb-4 form-check">
+              {{ form.is_published(class="form-check-input") }}
+              {{ form.is_published.label(class="form-check-label fw-semibold") }}
+            </div>
+            <div class="d-flex gap-3">
+              {{ form.submit(class="btn btn-dark btn-lg rounded-pill px-5") }}
+              <a href="{{ url_for('blog.post_detail', slug=post.slug) }}"
+                 class="btn btn-outline-secondary btn-lg rounded-pill px-4">Cancel</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
