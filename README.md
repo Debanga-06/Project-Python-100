@@ -149,7 +149,7 @@ Dive into complex applications with machine learning, data science, automation, 
 | 3 | [Blog Website](./Advanced_Level/Project-03) | Flask/Django, Database, Authentication | ✅ |
 | 4 | [Task Automation Bot](./Advanced_Level/Project-04) | Selenium, Web Automation | ✅ |
 | 5 | [Movie Recommendation System](./Advanced_Level/Project-05) | ML Algorithms, Data Processing | ✅ |
-| 6 | [Sentiment Analysis Tool](./Advanced_Level/Project-06) | NLP, Text Classification, ML | 🚧 |
+| 6 | [Sentiment Analysis Tool](./Advanced_Level/Project-06) | NLP, Text Classification, ML | ✅ |
 | 7 | [RESTful API](./Advanced_Level/Project-07) | Flask/FastAPI, Database, CRUD | 🚧 |
 | 8 | [File Encryption Tool](./Advanced_Level/Project-08) | Cryptography, Security, File Operations | 🚧 |
 | 9 | [Twitter Bot](./Advanced_Level/Project-09) | API Integration, Automation, Scheduling | 🚧 |
@@ -430,8 +430,8 @@ Expert (1-25)
 ## 📊 Project Status
 
 - **Total Projects Planned:** 106
-- **Completed:** 61
-- **In Progress:** 45
+- **Completed:** 62
+- **In Progress:** 44
 - **Last Updated:** July 2026
 
 ---
