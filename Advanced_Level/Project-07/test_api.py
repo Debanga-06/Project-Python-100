@@ -1,9 +1,4 @@
 """
-Not a full pytest suite, just a quick script that hits every endpoint in
-order (create author -> create book -> read -> update -> filter ->
-delete) so you can see the whole CRUD cycle working end to end. Uses
-FastAPI's TestClient so it doesn't need the server actually running.
-
     python test_api.py
 """
 
@@ -93,6 +88,5 @@ def run():
 
 if __name__ == "__main__":
     run()
-    # clean up the throwaway test db file
     if os.path.exists("test_library.db"):
         os.remove("test_library.db")

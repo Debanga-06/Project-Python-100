@@ -1,16 +1,9 @@
-"""
-Pydantic models - these are what actually validate incoming request bodies
-and shape what gets sent back out. Kept "Create" schemas separate from the
-full "Read" schemas since you don't want to require an id when creating
-something, but you do want to return one.
-"""
-
 from typing import Optional, List
 from datetime import datetime
 from pydantic import BaseModel, Field, ConfigDict
 
 
-# ---------- Author schemas ----------
+#  Author schemas 
 
 class AuthorBase(BaseModel):
     name: str = Field(..., min_length=1, max_length=120, examples=["George Orwell"])
@@ -35,7 +28,7 @@ class AuthorWithBooks(Author):
     books: List["Book"] = []
 
 
-# ---------- Book schemas ----------
+# Book schemas
 
 class BookBase(BaseModel):
     title: str = Field(..., min_length=1, max_length=200, examples=["1984"])

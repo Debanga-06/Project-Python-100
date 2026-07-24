@@ -1,10 +1,3 @@
-"""
-All the actual database operations live here, kept separate from the route
-handlers in routers/. This way the routes just deal with HTTP stuff
-(status codes, request/response shaping) and this file just deals with
-the database. Makes it a lot easier to test each piece on its own.
-"""
-
 from typing import Optional, List
 from sqlalchemy.orm import Session
 from sqlalchemy import or_

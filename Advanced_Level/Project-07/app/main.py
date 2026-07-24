@@ -1,8 +1,4 @@
 """
-App entry point. Creates the tables on startup (fine for SQLite/dev - for
-a real production setup you'd want Alembic migrations instead of
-create_all) and wires up the two routers.
-
 Run with:
     uvicorn app.main:app --reload
 """

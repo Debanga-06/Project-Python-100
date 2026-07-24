@@ -1,9 +1,3 @@
-"""
-Two tables here, related one-to-many: an Author can have many Books,
-each Book belongs to exactly one Author. Good simple example of a
-relational foreign key setup without overcomplicating things.
-"""
-
 from sqlalchemy import Column, Integer, String, Float, ForeignKey, DateTime
 from sqlalchemy.orm import relationship
 from sqlalchemy.sql import func
