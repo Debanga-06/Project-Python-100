@@ -1,5 +1,8 @@
 # Sentiment Analysis Tool
 
+[![License](https://img.shields.io/badge/License-AGPL--3.0-e8b84b?style=flat-square)](LICENSE)
+![Python](https://img.shields.io/badge/Python-3.10%2B-blue?style=flat-square&logo=python)
+
 A text classification project that reads a piece of text (like a product or movie review) and figures out whether it's positive, negative, or neutral. Built for my Python 100 advanced project, covering NLP + ML basics: cleaning text, turning it into numbers with TF-IDF, and training a few different classifiers to see which one actually performs best.
 
 ## What it does

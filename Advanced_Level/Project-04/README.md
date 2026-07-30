@@ -1,5 +1,8 @@
 # 🤖 Project 05 — Task Automation Bot
 
+[![License](https://img.shields.io/badge/License-AGPL--3.0-e8b84b?style=flat-square)](LICENSE)
+![Python](https://img.shields.io/badge/Python-3.10%2B-blue?style=flat-square&logo=python)
+
 > **Python Project #100** | Advanced Level | Selenium · Web Automation · Data Extraction
 
 A powerful, modular web automation framework built with Selenium. Includes 4 ready-to-run tasks: web scraping, form filling, website monitoring, and search automation.

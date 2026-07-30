@@ -1,5 +1,8 @@
 # 📝 Project 04 — Blog Website
 
+[![License](https://img.shields.io/badge/License-AGPL--3.0-e8b84b?style=flat-square)](LICENSE)
+![Python](https://img.shields.io/badge/Python-3.10%2B-blue?style=flat-square&logo=python)
+
 > **Python Project #100** | Advanced Level | Flask · SQLAlchemy · Authentication
 
 A fully-featured, production-ready blog platform built with Flask. Supports user authentication, post creation with categories & tags, a like/comment system, and a personal dashboard.

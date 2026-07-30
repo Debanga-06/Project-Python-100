@@ -151,7 +151,7 @@ Dive into complex applications with machine learning, data science, automation, 
 | 5 | [Movie Recommendation System](./Advanced_Level/Project-05) | ML Algorithms, Data Processing | ✅ |
 | 6 | [Sentiment Analysis Tool](./Advanced_Level/Project-06) | NLP, Text Classification, ML | ✅ |
 | 7 | [RESTful API](./Advanced_Level/Project-07) | Flask/FastAPI, Database, CRUD | ✅ |
-| 8 | [File Encryption Tool](./Advanced_Level/Project-08) | Cryptography, Security, File Operations | 🚧 |
+| 8 | [File Encryption Tool](./Advanced_Level/Project-08) | Cryptography, Security, File Operations | ✅ |
 | 9 | [Twitter Bot](./Advanced_Level/Project-09) | API Integration, Automation, Scheduling | 🚧 |
 | 10 | [Image Recognition Classifier](./Advanced_Level/Project-10) | TensorFlow/PyTorch, CNN, Training | 🚧 |
 | 11 | [Voice Assistant](./Advanced_Level/Project-11) | Speech Recognition, Text-to-Speech | 🚧 |
@@ -430,8 +430,8 @@ Expert (1-25)
 ## 📊 Project Status
 
 - **Total Projects Planned:** 106
-- **Completed:** 63
-- **In Progress:** 43
+- **Completed:** 64
+- **In Progress:** 42
 - **Last Updated:** July 2026
 
 ---

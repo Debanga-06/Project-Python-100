@@ -1,5 +1,8 @@
 # Library RESTful API
 
+[![License](https://img.shields.io/badge/License-AGPL--3.0-e8b84b?style=flat-square)](LICENSE)
+![Python](https://img.shields.io/badge/Python-3.10%2B-blue?style=flat-square&logo=python)
+
 A CRUD API built with FastAPI and SQLAlchemy for managing a small library of authors and books. Built for my Python 100 advanced project to cover the basics of building a real REST API backed by an actual database, not just an in-memory list.
 
 ## What this project actually does

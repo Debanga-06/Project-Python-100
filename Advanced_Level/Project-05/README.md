@@ -1,5 +1,8 @@
 # 🎬 Movie Recommendation System
 
+[![License](https://img.shields.io/badge/License-AGPL--3.0-e8b84b?style=flat-square)](LICENSE)
+![Python](https://img.shields.io/badge/Python-3.10%2B-blue?style=flat-square&logo=python)
+
 An advanced, fully working **Movie Recommendation System** built in pure Python, combining **Machine Learning algorithms** and **data processing** techniques. This project implements three classic recommendation strategies from scratch (using scikit-learn primitives) and demonstrates them end-to-end on a realistic synthetic dataset.
 
 Built for: **Python 100 — Advanced Level Project**
