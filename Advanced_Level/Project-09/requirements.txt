@@ -1,0 +1,4 @@
+tweepy==4.17.0
+python-dotenv==1.2.2
+schedule==1.2.2
+pandas==3.0.5
