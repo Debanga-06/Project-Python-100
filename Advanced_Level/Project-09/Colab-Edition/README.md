@@ -2,7 +2,7 @@
 
 > Automated tweet scheduling & auto-replies using Tweepy · X API v2 · Google Colab
 
-[![License](https://img.shields.io/badge/License-MIT-e8b84b?style=flat-square)](LICENSE)
+[![License](https://img.shields.io/badge/License-AGPL--3.0-e8b84b?style=flat-square)](LICENSE)
 ![Python](https://img.shields.io/badge/Python-3.10%2B-blue?style=flat-square&logo=python)
 ![Tweepy](https://img.shields.io/badge/Tweepy-4.14%2B-1DA1F2?style=flat-square)
 ![Colab](https://img.shields.io/badge/Run%20on-Google%20Colab-F9AB00?style=flat-square&logo=googlecolab)
@@ -134,4 +134,4 @@ Also worth knowing: the scheduler only keeps running while the Colab tab stays o
 
 ## 📄 License
 
-MIT License — see [LICENSE](LICENSE)
+AGPL-3.0 License — see [LICENSE](LICENSE)

@@ -4,7 +4,7 @@
 
 ![Python](https://img.shields.io/badge/Python-3.10%2B-blue?logo=python)
 ![Status](https://img.shields.io/badge/Status-Demo-orange)
-![License](https://img.shields.io/badge/License-MIT-green)
+[![License](https://img.shields.io/badge/License-AGPL--3.0-e8b84b?style=flat-square)](LICENSE)
 ![Automation](https://img.shields.io/badge/Automation-Enabled-success)
 ![API](https://img.shields.io/badge/API-Free%20Public%20API-blueviolet)
 
@@ -266,7 +266,7 @@ Contributions are always welcome.
 
 ## 📜 License
 
-This project is licensed under the MIT License.
+This project is licensed under the AGPL-3.0 License.
 
 ---
 
