@@ -107,19 +107,6 @@ Also worth knowing: the mic-recording JS bridge only works in Colab's browser-co
 
 ---
 
-## 📄 License
-
-MIT License — see [LICENSE](LICENSE)# 🎙️ Voice Assistant
-
-> Browser-mic voice assistant with speech recognition & spoken replies · SpeechRecognition · gTTS · Google Colab
-
-[![License](https://img.shields.io/badge/License-MIT-e8b84b?style=flat-square)](LICENSE)
-![Python](https://img.shields.io/badge/Python-3.10%2B-blue?style=flat-square&logo=python)
-![SpeechRecognition](https://img.shields.io/badge/SpeechRecognition-3.10%2B-4B8BBE?style=flat-square)
-![Colab](https://img.shields.io/badge/Run%20on-Google%20Colab-F9AB00?style=flat-square&logo=googlecolab)
-
----
-
 ## 🚀 Features
 
 - **Browser Mic Recording** — captures your voice through a small JavaScript bridge, since Colab has no direct hardware mic access
